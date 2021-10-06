@@ -1,0 +1,16 @@
+{
+    "name": "Sample",
+    "version": "1.0.0",
+    "manifest_version": 3,
+    "description": "Sample Chrome Extension",
+    "content_scripts": [{
+      "matches": ["https://atcoder.jp/contests/*/tasks/*"],
+      "js": [
+        "content.js"
+      ]
+    }],
+    "host_permissions": [
+        "https://atcoder-list.herokuapp.com/",
+        "https://atocoder.jp"
+    ]
+  }
